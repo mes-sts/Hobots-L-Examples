@@ -3,6 +3,8 @@
  * 
  * Проверка инфракрасного приемника HL Стандарт
  * 
+ * Приемник подключечен в разъем 6
+ * 
  * Ссылка на библиотеку https://github.com/Arduino-IRremote/Arduino-IRremote/tree/master
  * 
  * Инструменты → Плата → Arduino Uno
