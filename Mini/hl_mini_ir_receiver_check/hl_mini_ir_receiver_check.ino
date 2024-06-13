@@ -1,7 +1,7 @@
 /*
  * hl_mini_ir_receiver_check
  * 
- * Проверка инфракрасного приемника HL Мини
+ * Проверка встроенного инфракрасного приемника HL Мини
  * 
  * Ссылка на библиотеку https://github.com/Arduino-IRremote/Arduino-IRremote/tree/master
  * 
