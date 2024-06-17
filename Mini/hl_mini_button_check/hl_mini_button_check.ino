@@ -21,7 +21,8 @@ void setup() {
 }
 
 void loop() {
-  if (digitalRead(BUTTON_PIN)) {
+  // Получение аналогового значения с вывода кнопки и проверка на 0 (0 - кнопка нажата)
+  if (!analogRead(BUTTON_PIN)) {
     Serial.println("Button PRESSED");
   }
   else {
