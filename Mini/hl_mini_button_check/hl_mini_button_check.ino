@@ -5,7 +5,7 @@
  * 
  * Инструменты → Плата → Arduino Uno
  * 
- * Copyright (C) 2024. v1.0 / MES
+ * Copyright (C) 2024. v1.1 / MES
  */
 
 
@@ -20,9 +20,18 @@ void setup() {
   pinMode(BUTTON_PIN, INPUT);
 }
 
+bool checkUserButtonState() {
+  // Получение аналогового значения с вывода кнопки и проверка на 0 (значение < 512 - кнопка нажата)
+  if (analogRead(BUTTON_PIN) > 512) {
+    return false; // Отпущена
+  }
+  else {
+    return true; // Нажата
+  }
+}
+
 void loop() {
-  // Получение аналогового значения с вывода кнопки и проверка на 0 (0 - кнопка нажата)
-  if (!analogRead(BUTTON_PIN)) {
+  if (checkUserButtonState()) {
     Serial.println("Button PRESSED");
   }
   else {
