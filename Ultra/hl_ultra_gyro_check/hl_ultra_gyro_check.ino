@@ -5,7 +5,11 @@
  * 
  * Ссылка на библиотеку гироскопа https://github.com/hideakitai/MPU9250
  * 
- * Инструменты → Плата → Arduino Uno
+ * Инструменты → Плата → STM32 Boards Groups → Generic STM32F1 series
+ * Инструменты → Board part number → Generic F103RCTx
+ * Инструменты → U(S)ART support → Enable (generic 'Serial')
+ * Инструменты → USB support (if available) → CDC (generic 'Serial' supersede U(S)ART)
+ * Инструменты → Upload method → HID Bootloader 2.2
  * 
  * Copyright (C) 2024. v1.0 / MES
  */
