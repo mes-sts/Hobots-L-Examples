@@ -28,7 +28,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1); // -1 чтоб
 
 void setup() {
   // Настройка скорости отладочного порта
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   // Попытка иницализации объекта дисплея
   if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {

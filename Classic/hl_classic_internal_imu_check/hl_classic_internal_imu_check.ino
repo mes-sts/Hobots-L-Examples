@@ -21,7 +21,7 @@ const uint8_t IMU_INTERNAL_I2C_ADDR = 0x69;
  
 void setup() {
   // Настройка скорости отладочного порта
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   // Попытка иницализации объекта с указанием адреса датчика
   if (!MPU.begin(IMU_INTERNAL_I2C_ADDR)) {
